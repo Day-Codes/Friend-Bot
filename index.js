@@ -3,8 +3,7 @@ const chalk = require("chalk");
 const colors = require("colors")
 const Cluster = require('discord-hybrid-sharding');
 const client = new Client({
-    shards: Cluster.data.SHARD_LIST, 
-    shardCount: Cluster.data.TOTAL_SHARDS, 
+
     intents: 32767,
 });
 module.exports = client;
@@ -14,7 +13,7 @@ client.commands = new Collection();
 client.slashCommands = new Collection();
 const fs = require(`fs`);
 client.config = require("./config.json");
-client.cluster = new Cluster.Client(client)
+
 
 global.config = require("./config.json");
 

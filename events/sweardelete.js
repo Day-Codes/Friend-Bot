@@ -1,3 +1,5 @@
+const client = require("../index");
+const { MessageEmbed } = require("discord.js")
 client.on("message", async message => {
     let em = new MessageEmbed()
     .setTitle(`${message.author.tag}! Please do not use that word `)

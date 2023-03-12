@@ -6,7 +6,7 @@ client.on('guildCreate', guild =>{
   client.guilds.cache.forEach((g) => {
     
    const user = client.users.cache.get(g.ownerId)
-   user.send({ content: `Hello, ${user} \n Thanks for inviting Donut Cop! We use Slash commands, if you have any questions please feel free to join our support server: https://discord.gg/HyMvKMM96M , Thanks, \n Donut Cop Team`})
+   user.send({ content: `Hello, ${user} \n Thanks for inviting Friend Bot! We use Slash commands, if you have any questions please feel free to join our support server: https://discord.gg/HyMvKMM96M , Thanks, \n Donut Cop Team`})
   })
     // MEssage
   const channelId = '1074505677902458931'; //put your channel ID here

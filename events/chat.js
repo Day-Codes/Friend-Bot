@@ -21,11 +21,12 @@ let eeValue = await ok();
    return message.reply(`**:x: Please dont mention anyone**`);
  }
    
- message.channel.startTyping();
+// message.channel.startTyping();
+message.channel.sendTyping()
 setTimeout(function(){
-    message.channel.stopTyping();
+   // message.channel.stopTyping();
     message.reply(eeValue.result);
-}, 5000);
+}, 5000)
 
   }
     }
