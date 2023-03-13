@@ -1,18 +1,18 @@
 const { Client, CommandInteraction, MessageEmbed, MessageActionRow, MessageButton } = require("discord.js");
 
 module.exports = {
-    name: "invite",
-    description: "Gets the bot's invite link",
+    name: "updatelog",
+    description: "gets the bot's updates",
     type: 'CHAT_INPUT',
     run: async (client, interaction, args) => {
       let msg = await interaction.followUp(`Loading..`);
 
       const emb = new MessageEmbed()
-      .setColor(client.config.color.main)
-      .setTitle(`Invite ${client.user.username}`)
-      .setDescription(`Invite the bot!`)
+      .setColor("RANDOM")
+      .setTitle(`Update Logs`)
+      .setDescription(`Last Update: **1/25/23** \n Added: Hentai and NFSW Commands \n Notes: N/A \n Update Made by: Owner`)
       .setThumbnail(client.user.displayAvatarURL({ dynamic : true }))
-      .setFooter(`Made with 💖 by discord.azury.live`) 
+      .setFooter(`Made with 💖 by discord.azury.live | Dayln `) 
 
       const row = new MessageActionRow()
 			.addComponents(
@@ -21,9 +21,10 @@ module.exports = {
 				.setLabel('Instant')
 				.setStyle('LINK'),
 			);
+
       
       setTimeout(() => {
-        msg.edit({ content: `https://discord.gg/MMQ6QvcfqT`, embeds: [emb], components: [row] });
+        msg.edit({ content: `Support Server! https://discord.gg/MMQ6QvcfqT`, embeds: [emb], components: [row] });
       }, 500);
     },
 };

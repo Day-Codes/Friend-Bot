@@ -1,29 +1,30 @@
 const { Client, CommandInteraction, MessageEmbed, MessageActionRow, MessageButton } = require("discord.js");
 
 module.exports = {
-    name: "invite",
-    description: "Gets the bot's invite link",
+    name: "donate",
+    description: "donate to us",
     type: 'CHAT_INPUT',
     run: async (client, interaction, args) => {
       let msg = await interaction.followUp(`Loading..`);
 
       const emb = new MessageEmbed()
-      .setColor(client.config.color.main)
-      .setTitle(`Invite ${client.user.username}`)
-      .setDescription(`Invite the bot!`)
+      .setColor("GREEN")
+      .setTitle(`Donate to us!`)
+      .setDescription(`**Crypto Donations**: 0x4818Fd652b84D67f19543C6B02A0C414657d8Ade \n **Buy me a Coffee**: https://www.buymeacoffee.com/Daydev `)
       .setThumbnail(client.user.displayAvatarURL({ dynamic : true }))
-      .setFooter(`Made with 💖 by discord.azury.live`) 
+      .setFooter(`Made with 💖 by Our Team `) 
 
       const row = new MessageActionRow()
 			.addComponents(
 				new MessageButton()
-				.setURL(`https://discord.com/api/oauth2/authorize?client_id=${client.user.id}&permissions=8&scope=bot%20applications.commands`)
-				.setLabel('Instant')
+				.setURL(`https://paypal.me/daydev`)
+				.setLabel('Paypal')
 				.setStyle('LINK'),
 			);
+
       
       setTimeout(() => {
-        msg.edit({ content: `https://discord.gg/MMQ6QvcfqT`, embeds: [emb], components: [row] });
+        msg.edit({ content: `Donate to us!`, embeds: [emb], components: [row] });
       }, 500);
     },
 };
