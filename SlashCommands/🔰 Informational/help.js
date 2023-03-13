@@ -28,11 +28,11 @@ module.exports = {
       }); 
 
       const embed = new MessageEmbed()
-      .setTitle(`Discord Bot | Handler | Azury`)
+      .setTitle(`Friend Bot`)
       .setColor(client.config.color.yellow)
-        .addField(`About Me`, "I am a Slash COmmands Discord Bot: handler by https://discord.gg/azury\n> *GIVE CREDITS IF U USE!*")
+        .addField(`About Me`, "I am a your local friend bot!")
       .addFields(categories)
-      .setFooter(`Powered by Azury.live\n🔷 Server-Shard: ${interaction.guild.shardId}`, interaction.guild.iconURL())
+      .setFooter(interaction.guild.iconURL())
       return interaction.followUp({ embeds: [embed] })
     },
 };

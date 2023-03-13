@@ -12,7 +12,7 @@ module.exports = {
       .setTitle(`Invite ${client.user.username}`)
       .setDescription(`Invite the bot!`)
       .setThumbnail(client.user.displayAvatarURL({ dynamic : true }))
-      .setFooter(`Made with 💖 by discord.azury.live`) 
+      .setFooter(`Made with 💖 by Friend Bot`) 
 
       const row = new MessageActionRow()
 			.addComponents(

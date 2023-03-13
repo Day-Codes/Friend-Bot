@@ -1,0 +1,5 @@
+ALL RIGHTS OWN TO AZURY STUDIOS! @2023 
+
+THIS HANDLER OWN BY THEM!
+
+masterious owns rights
