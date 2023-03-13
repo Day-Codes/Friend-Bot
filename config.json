@@ -14,7 +14,7 @@
   "COMMENT": "Only enable hostingweb if you are using replit!",
   "hostingweb": true,
   
-  "developers": ["959215890321260545"],
+  "owner": ["959215890321260545"],
 
   "color": {
     "main"   : "GREEN",
