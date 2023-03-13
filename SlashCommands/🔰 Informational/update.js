@@ -10,7 +10,7 @@ module.exports = {
       const emb = new MessageEmbed()
       .setColor("RANDOM")
       .setTitle(`Update Logs`)
-      .setDescription(`Last Update: **1/25/23** \n Added: Hentai and NFSW Commands \n Notes: N/A \n Update Made by: Owner`)
+      .setDescription(`Last Update: **3/13/23** \n Added: Fix all bugs \n Notes: N/A \n Update Made by: Owner`)
       .setThumbnail(client.user.displayAvatarURL({ dynamic : true }))
       .setFooter(`Made with 💖 by discord.azury.live | Dayln `) 
 
